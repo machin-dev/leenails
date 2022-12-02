@@ -8,7 +8,7 @@ export default function ListaImg(props){
    const {direccion}=props;   
    
     return(
-        <div className="d-flex flex-wrap align-items-center justify-content-center m-2 h-100 overflow-auto text-white" id='imagenes'>          
+        <div className="container-fluid d-flex flex-wrap align-items-center justify-content-center m-2 h-100 overflow-auto text-white" id='imagenes'>          
             { 
              direccion ? (
               <>  
