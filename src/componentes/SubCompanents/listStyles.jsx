@@ -21,13 +21,13 @@ export default function ListStyles(props){
                 <button className="btn btn-primary w-100" id="solid" onClick={loadDir}> Color solido</button>
               </li>
               <li className="nav-link" >
-              <button className="btn btn-primary w-100"  id="2colores" onClick={loadDir}> Dos colores</button>
+               <button className="btn btn-primary w-100"  id="2colores" onClick={loadDir}> Dos colores</button>
               </li>
               <li className="nav-link" >
-              <button className="btn btn-primary w-100" id="creativo" onClick={loadDir}> Creativos</button>
+               <button className="btn btn-primary w-100" id="creativo" onClick={loadDir}> Creativos</button>
               </li>
               <li className="nav-link" >
-              <button className="btn btn-primary w-100" id="relieve" onClick={loadDir}> Relieve</button>
+                <button className="btn btn-primary w-100" id="relieve" onClick={loadDir}> Relieve</button>
               </li>
              </ul>
          </div>                 
