@@ -11,6 +11,8 @@ import { useState } from "react";
 import {v4 as uuid} from "uuid";
 import CitaInfo from "./SubCompanents/citaInfo";
 import { Modal } from "bootstrap";
+import TimePicker from "react-time-picker";
+import 'react-time-picker/dist/TimePicker.css'
 
 const Calendario =() =>{
     const [nombre, setNombre]=useState('')
@@ -62,8 +64,7 @@ const Calendario =() =>{
           views={["dayGridMonth", "dayGridWeek", "timeGridDay"]}
           initialView="timeGridDay"          
           events={events}  
-          eventContent={(info)=><CitaInfo info={info}/>}   
-          eventClick={(event)=>console.log(event)}
+          eventContent={(info)=><CitaInfo info={info}/>}             
            /> 
         <div className="modal fade" id="mymodal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog">
@@ -84,17 +85,19 @@ const Calendario =() =>{
                    />
                  </div>
                  <div className="input-group mb-3">
-                    <span className="input-group-text" id="basic-addon1">desde</span>
-                    <input type="text" className="form-control" placeholder={fecha.inicio} aria-label="Username" aria-describedby="basic-addon1" />
+                    <span className="input-group-text" id="basic-addon1">De:</span>
+                    <TimePicker value={fecha.inicio} className="form-control"/>
                  </div>
                  <div className="input-group mb-3">
-                  <span className="input-group-text" id="basic-addon1">hasta</span>
-                  <input type="text" className="form-control" placeholder={fecha.fin} aria-label="Username" aria-describedby="basic-addon1" />
+                  <span className="input-group-text" id="basic-addon1">A:</span>
+                  <TimePicker value={fecha.fin} className="form-control"/>
+                  
                  </div>                 
                </form> 
                <div className="modal-footer">
                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                <button type="button" className="btn btn-primary" onClick={agregar}>Aceptar</button>
+               
              </div> 
              </div>
              
