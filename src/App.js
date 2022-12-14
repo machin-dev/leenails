@@ -7,7 +7,7 @@ import Home from './componentes/Home';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Footer from './componentes/Footer';
 import Fondo from './componentes/SubCompanents/fondo';
-import Catalogo from './componentes/SubCompanents/catalago';
+import Calendario from './componentes/calendar';
 
 
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={< Home />} />
         <Route path="/Localizacion" element={<Localizacion />} />
         <Route path="/Estilos" element={<Estilos />} />     
-        <Route path="/Catalogo" element={<Catalogo />} />    
+        <Route path="/Cita" element={<Calendario />} />    
         <Route path="/Servicios" element={<Servicios />} />
         <Route path="/Home" element={< Home />} />        
       </Routes>     

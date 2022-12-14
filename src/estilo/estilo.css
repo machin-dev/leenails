@@ -9,23 +9,15 @@
     background-size: cover;   
     
 }
-.bg_gradient{
-    background: rgb(153,21,6);
-background: -moz-linear-gradient(90deg, rgba(153,21,6,0.690896341446735) 0%, rgba(9,121,79,0.6684873778613007) 35%, rgba(0,212,255,0.37436973080247726) 100%);
-background: -webkit-linear-gradient(90deg, rgba(153,21,6,0.690896341446735) 0%, rgba(9,121,79,0.6684873778613007) 35%, rgba(0,212,255,0.37436973080247726) 100%);
-background: linear-gradient(90deg, rgba(153,21,6,0.690896341446735) 0%, rgba(9,121,79,0.6684873778613007) 35%, rgba(0,212,255,0.37436973080247726) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#991506",endColorstr="#00d4ff",GradientType=1); 
-}
+
 #lin:hover{
-    background-color:rgba(255, 255, 255, 0.35);    
-    transition-property: background-color; 
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;  
+   background-color:rgba(49, 6, 240, 0.35);  
+    transition: all 0.5s ease-in-out; 
 }
 .gradient_text{
     background: linear-gradient(60deg, blue, rgb(240, 23, 59));
     background-clip: text;
-    color:transparent;
-    
+    color:transparent;    
 }
+
 
