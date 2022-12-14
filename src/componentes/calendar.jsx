@@ -10,7 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useState } from "react";
 import {v4 as uuid} from "uuid";
 import CitaInfo from "./SubCompanents/citaInfo";
-import { Button, Modal } from "bootstrap";
+import { Modal } from "bootstrap";
 
 const Calendario =() =>{
     const [nombre, setNombre]=useState('')
@@ -21,8 +21,7 @@ const Calendario =() =>{
     });
     const [events, setEvents]=useState([]);        
    
-    const handleSelect = (info) =>{
-        //console.log(info);
+    const handleSelect = (info) =>{        
         setFecha({
           dia: info.start.getDate()+'-'+(parseInt(info.start.getMonth())+1)+'-'+info.start.getFullYear(),
           inicio:info.start,
@@ -32,9 +31,7 @@ const Calendario =() =>{
         const mymodal=new Modal(document.getElementById("mymodal"));
       mymodal.show();
     };
-     const agregar =() =>{             
-             console.log('agregando:'+
-             nombre+'--'+fecha.inicio+'--'+fecha.fin)
+     const agregar =() =>{                          
              nombre ? (
               setEvents([...events,{
                 start:fecha.inicio,
@@ -44,13 +41,11 @@ const Calendario =() =>{
             },])             
              ):(
                 alert('datos insuficientes')
-             )             
+             )
+             document.getElementById("EventName").value=null;  
+             setNombre('')
      }
-      const modal = (info) =>{               
-        console.log(info)
-      const mymodal=new Modal(document.getElementById("mymodal"));
-      mymodal.show();
-     }
+     
     return(       
       <div className="container-fluid bg-light position-relative h-auto p-4 " style={{fontSize:('1em'), marginTop:('100px'), width:('90%')}}>
          <FullCalendar          
@@ -67,7 +62,7 @@ const Calendario =() =>{
           views={["dayGridMonth", "dayGridWeek", "timeGridDay"]}
           initialView="timeGridDay"          
           events={events}  
-          eventContent={(info)=><CitaInfo info={info} />}   
+          eventContent={(info)=><CitaInfo info={info}/>}   
           eventClick={(event)=>console.log(event)}
            /> 
         <div className="modal fade" id="mymodal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -84,6 +79,7 @@ const Calendario =() =>{
                    <input type="text" className="form-control" 
                    placeholder="Nombre" aria-label="Username" 
                    aria-describedby="basic-addon1" 
+                   id="EventName"
                    onChange={(e)=>setNombre(e.currentTarget.value)}
                    />
                  </div>
