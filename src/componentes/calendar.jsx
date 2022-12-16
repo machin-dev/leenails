@@ -26,10 +26,9 @@ const Calendario =() =>{
           dia: info.start.getDate()+'-'+(parseInt(info.start.getMonth())+1)+'-'+info.start.getFullYear(),
           inicio:info.start,
           fin:info.end
-        });       
-        console.log(info.start.toLocaleString())
+        });              
         const mymodal=new Modal(document.getElementById("mymodal"));
-      mymodal.show();
+        mymodal.show();
     };
      const agregar =() =>{                          
              nombre ? (
