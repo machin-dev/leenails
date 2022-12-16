@@ -6,22 +6,12 @@ import ListaImg from "./SubCompanents/ListaImg";
 
 
 const Estilos =()=>{   
-    const [dir, setDir]=useState(null); 
-    const actualizar =()=>{
-        console.log('esta es la direccion de la carpeta:'+dir);
-    }
-    useEffect((actualizar));
+    
+  
     return(
-        <div className="container-fluid vh-100">
-            <div className="row h-100 ">
-            <div className="col col-lg-3 p-0"  >        
-                <ListStyles folder={dir} setFolder={setDir} /> 
-            </div>
-            <div className="col ">
-                 <ListaImg direccion={dir} />
-            </div>
-        </div>
-        </div>
+        <div className="container-fluid vh-100" style={{marginTop:('100px')}}>
+              <ListaImg />
+         </div>
     );
 }
 

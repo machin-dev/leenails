@@ -49,7 +49,7 @@ const Calendario =() =>{
      }
      
     return(       
-      <div className="container-fluid bg-light position-relative h-auto p-3 bg-opacity-75" style={{fontSize:('1em'), marginTop:('100px'), width:('90%')}}>
+      <div className="container-fluid bg-light position-relative h-auto p-3git bg-opacity-75" style={{fontSize:('1em'), marginTop:('100px'), width:('90%')}}>
          <FullCalendar          
           headerToolbar={{
             start: "today prev next",
