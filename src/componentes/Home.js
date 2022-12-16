@@ -8,8 +8,8 @@ import { Calendar } from "react-bootstrap-icons";
 export default function Home()
 {    
     return (       
-        <div className='container-fluid text-center d-flex flex-column justify-content-center bg-light position-relative align-items-center h-100 bg-opacity-50 overflow-auto'>                                
-           <div className="rounded shadow ">            
+        <div className='container-fluid text-center d-flex flex-column justify-content-center  position-relative align-items-center h-100  overflow-auto'>                                
+           <div className="rounded shadow bg-light bg-opacity-50">            
             <p className="text-center text-light bg-secondary">SERVICIO DE MANICURE</p>
             <h1 className=" text-center gradient_text fw-bold border-bottom"  style={{fontSize:('9vw')}}>LeeNAILS</h1>                       
             <div className="bg-light p-4">

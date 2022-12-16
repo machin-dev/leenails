@@ -26,7 +26,10 @@ export default function NavBar()
                 <Link className="nav-link text-primary " to="/Localizacion" aria-current="page">Localizacion</Link>
               </li> 
               <li className="nav-item h-100 ms-4 rounded-pill" >
-                <Link className="nav-link text-dark " to="" aria-current="page"><Facebook /></Link>
+                <a className="nav-link text-dark "
+                 href="https://www.facebook.com/leeann.mazonromero" 
+                 title="Ver perfil de LeeAnn"
+                 aria-current="page"><Facebook /></a>
               </li> 
               <li className="nav-item h-100 " >
                 <Link className="nav-link text-dark " to="" aria-current="page"><Telegram /></Link>
