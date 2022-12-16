@@ -6,7 +6,7 @@ import '../estilo/estilo.css';
 export default function NavBar()
 {
     return(
-      <nav className="bg-opacity-75 navbar navbar-expand-sm justify-content-center position-fixed top-0 w-100 shadow overflow-hidden bg-light " id='nav' style={{zIndex:('999')}}>
+      <nav className="bg-opacity-75 navbar navbar-expand-sm justify-content-center position-fixed top-0 w-100 shadow overflow-hidden bg-transparent " id='nav' style={{zIndex:('999')}}>
         <div className="nav">
           <Link to='/Home' className="navbar-brand text-white bg-primary rounded-pill p-3">LeeNails</Link>
           <button className="navbar-toggler d-lg-none border-2" type="button" data-bs-toggle="collapse"

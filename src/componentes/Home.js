@@ -2,7 +2,7 @@ import React from "react";
 import '../estilo/estilo.css';
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Book, Calendar } from "react-bootstrap-icons";
+import { Calendar } from "react-bootstrap-icons";
 
 
 export default function Home()
@@ -14,8 +14,9 @@ export default function Home()
             <h1 className=" text-center text-dark border-top"  style={{fontSize:('9vw')}}>NAILS</h1> 
            </div>
            <div className="shadow m-4  bg-primary rounded " >            
-            <Link to='/Cita'> <button className="btn btn-primary w-100" id="solid" ><Calendar  className="me-2"/>Cita</button></Link>           
+            <Link to='/Cita'> <button className="btn btn-primary w-100" id="solid" ><Calendar  className="me-2"/>Programar Cita</button></Link>           
            </div> 
+          
         </div>                     
     );
 }
