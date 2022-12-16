@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ArrowLeftCircle, Back } from "react-bootstrap-icons";
+
 import CardImage from "./CardImage";
 
 

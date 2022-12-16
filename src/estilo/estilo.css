@@ -11,7 +11,7 @@
 }
 
 #lin:hover{
-   text-decoration: underline;
+    text-decoration: underline;
     transition: all 0.5s ease-in-out; 
 }
 .gradient_text{
